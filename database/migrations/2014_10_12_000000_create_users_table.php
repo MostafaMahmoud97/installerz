@@ -22,7 +22,7 @@ class CreateUsersTable extends Migration
             $table->string('password');
             $table->string("phone")->default("")->nullable();
             $table->string("mail")->default("")->nullable();
-            $table->longText("address")->default("")->nullable();
+            $table->longText("address")->nullable();
             $table->string("subdomain");
             $table->boolean("is_active")->default(1);
             $table->boolean("is_publish")->default(0);
